@@ -1,0 +1,104 @@
+footer {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #0f1521;
+  color: white;
+  gap: 30px;
+  padding: 50px 0;
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .line {
+    height: 1px;
+    width: 70%;
+    background-color: white;
+  }
+
+  .footer-content {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .about-shop {
+      height: 200px;
+      cursor: pointer;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h3 {
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          span {
+            svg {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+    .information {
+      display: flex;
+      height: 300px;
+      width: 200px;
+      flex-direction: column;
+      gap: 30px;
+      h3 {
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+    }
+    .social-media {
+      display: flex;
+      cursor: pointer;
+      height: 200px;
+      width: 200px;
+      flex-direction: column;
+      gap: 30px;
+      h3 {
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        li {
+          display: flex;
+          align-items: center;
+          text-transform: capitalize;
+          gap: 5px;
+          svg {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright{
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+
+}

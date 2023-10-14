@@ -1,0 +1,47 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cart .cart-left {
+  padding: 50px 0;
+  width: 1100px;
+}
+.cart .cart-left .cart-card {
+  margin: 0 auto;
+  gap: 20px;
+  display: flex;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cart .cart-left .cart-card .cart-img {
+  height: 150px;
+}
+.cart .cart-left .cart-card .cart-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart .cart-left .cart-card .counter {
+  margin-right: 10px;
+}
+.cart .cart-left .cart-card .counter button {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.cart .cart-left .cart-card .counter span {
+  padding: 0 10px;
+  font-size: 18px;
+}
+.cart .cart-left .cart-card svg {
+  font-size: 30px;
+}/*# sourceMappingURL=cart.css.map */

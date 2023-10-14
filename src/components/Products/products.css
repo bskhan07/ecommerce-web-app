@@ -1,0 +1,70 @@
+.products-container {
+  width: 100%;
+  padding: 100px 5% 50px 5%;
+  background-color: #f8f8f8;
+  margin: 50px auto;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products-container h1 {
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  background-color: #8019c8;
+  color: white;
+  padding: 5px 10px;
+}
+.products-container .card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background-color: white;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.products-container .card .price {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.products-container .card .price :nth-child(1) {
+  color: #8019c8;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.products-container .card .img {
+  width: 100%;
+  height: 70%;
+}
+.products-container .card .img img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.2s ease;
+}
+.products-container .card .img img:hover {
+  scale: 0.9;
+  border-radius: 10px;
+}
+.products-container .card button {
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 12px 40px;
+  background-color: #8019c8;
+  border-radius: 5px;
+}/*# sourceMappingURL=products.css.map */

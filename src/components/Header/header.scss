@@ -1,0 +1,132 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  padding: 25px 20px;
+  span {
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav {
+    ul {
+      align-items: center;
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+      text-transform: uppercase;
+      list-style: none;
+      li {
+        transition: all 0.3s ease;
+        padding: 5px 10px;
+        &:hover {
+          border-radius: 5px;
+          background-color: #8019c8;
+          color: white;
+        }
+      }
+
+      :nth-child(2) {
+        a {
+          color: black;
+          text-decoration: none;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
+      :nth-child(3) {
+        a {
+          color: black;
+          text-decoration: none;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+      :nth-child(5) {
+        display: none;
+      }
+    }
+    .close {
+      display: none;
+      cursor: pointer;
+    }
+  }
+  .header-icons {
+    font-size: 16px;
+    display: flex;
+    color: #8019c8;
+    gap: 5px;
+    .nav-btn {
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    .header-icons {
+      span {
+        display: none;
+      }
+      .nav-btn {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    nav {
+      z-index: 99;
+      transition: 0.5s;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #8019c8;
+      height: 100%;
+      transform: translateY(-100vh);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        li {
+          color: white;
+        }
+        :nth-child(2) {
+          a {
+            color: white;
+          }
+        }
+        :nth-child(3) {
+          a {
+            color: white;
+          }
+        }
+        :nth-child(5) {
+          display: block;
+        }
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        color: white;
+        right: 20px;
+        display: block;
+      }
+    }
+
+    .responsive-nav {
+      transition: 0.5s;
+      transform: none;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.contact-us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+  h2 {
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+  form {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    input {
+      height: 50px;
+      width: 500px;
+      padding: 0 20px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      outline: 0;
+      border: 0;
+    }
+    button {
+      width: fit-content;
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+      color: white;
+      font-size: 18px;
+      padding: 12px 40px;
+      background-color: #8019c8;
+      border-radius: 5px;
+    }
+  }
+}

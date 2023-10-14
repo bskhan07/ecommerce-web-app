@@ -1,0 +1,67 @@
+.category {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 50px 120px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cat-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  width: 220px;
+  height: 320px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background: #8019c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.cat-card::before,
+.cat-card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #b67ee0;
+  transition: all 0.5s;
+}
+
+.cat-card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.cat-card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.cat-card:hover::before,
+.cat-card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.cat-card:hover:after {
+  color: white;
+  content: "Lets Go";
+}/*# sourceMappingURL=category.css.map */

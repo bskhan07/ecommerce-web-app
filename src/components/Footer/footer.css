@@ -1,0 +1,97 @@
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #0f1521;
+  color: white;
+  gap: 30px;
+  padding: 50px 0;
+}
+footer h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+footer .line {
+  height: 1px;
+  width: 70%;
+  background-color: white;
+}
+footer .footer-content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .footer-content .about-shop {
+  height: 200px;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-content .about-shop h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+footer .footer-content .about-shop ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-content .about-shop ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .footer-content .about-shop ul li span svg {
+  font-size: 25px;
+}
+footer .footer-content .information {
+  display: flex;
+  height: 300px;
+  width: 200px;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-content .information h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+footer .footer-content .social-media {
+  display: flex;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .footer-content .social-media h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+footer .footer-content .social-media ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+footer .footer-content .social-media ul li {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 5px;
+}
+footer .footer-content .social-media ul li svg {
+  font-size: 25px;
+}
+
+.copyright {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}/*# sourceMappingURL=footer.css.map */
