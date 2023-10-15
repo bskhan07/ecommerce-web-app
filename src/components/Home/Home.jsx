@@ -16,7 +16,9 @@ const Home = () => {
   const fetchCategory = () => {
     fetch("https://fakestoreapi.com/products/categories")
       .then((res) => res.json())
-      .then((data) => setCategory(data))
+      .then((data) =>{
+        setCategory(data),
+      } )
       .catch((error) => console.log(error));
   };
   const navigate = useNavigate();
@@ -31,50 +33,26 @@ const Home = () => {
         showThumbs={false}
         className="carousel"
       >
-        <div className="heading">
-          <h1>stylish watches</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus{" "}
-          </p>
-          <div className="buttons">
-            <button onClick={() => navigate("/contact-us")}>Contact Us</button>
-            <button onClick={() => navigate("/about")}>About Us</button>
-          </div>
-        </div>
-        <div className="heading">
-          <h1>stylish watches</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus{" "}
-          </p>
-          <div className="buttons">
-            <button>Contact Us</button>
-            <button>About Us</button>
-          </div>
-        </div>
-        <div className="heading">
-          <h1>stylish watches</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus{" "}
-          </p>
-          <div className="buttons">
-            <button>Contact Us</button>
-            <button>About Us</button>
-          </div>
-        </div>
-        <div className="heading">
-          <h1>stylish watches</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus{" "}
-          </p>
-          <div className="buttons">
-            <button>Contact Us</button>
-            <button>About Us</button>
-          </div>
-        </div>
+        {category?.map((e) => {
+          return (
+            <div key={e} className="heading">
+              <h1>{e}</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus{" "}
+              </p>
+              <div className="buttons">
+                <button onClick={() => navigate("/contact-us")}>
+                  Contact Us
+                </button>
+                <button onClick={() => navigate("/about")}>About Us</button>
+              </div>
+            </div>
+          );
+        })}
       </Carousel>
       <About />
       <Category category={category} />
-      {category?.map((e,i) => {
+      {category?.map((e, i) => {
         return <Products category={e} key={i} />;
       })}
       <Contact />
